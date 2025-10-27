@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Main Cast</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom Style -->
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #141414;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .cast {
+      padding: 60px 0;
+    }
+
+    .cast h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #e50914; 
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+      font-family: 'Arial Black', sans-serif;
+    }
+
+    .cast-card {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #000;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+      transition: transform 0.3s;
+    }
+
+    .cast-card:hover {
+      transform: scale(1.05);
+    }
+
+    .cast-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #e50914;
+      margin-bottom: 10px;
+    }
+
+    .cast-card p {
+      color: #e50914;
+      font-weight: bold;
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<main>
+  <section class="cast">
+    <div class="container text-center">
+      <h1>Main Cast</h1>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Cast Members -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="cast-card">
+            <img src="images/choi.jpg" alt="Choi Ye-bin">
+            <p>Choi Ye-bin</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="cast-card">
+            <img src="images/jung.jpeg" alt="Jung So-ri">
+            <p>Jung So-ri</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="cast-card">
+            <img src="images/lee.jpeg" alt="Lee Jae-in">
+            <p>Lee Jae-in</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="cast-card">
+            <img src="images/kim.jpg" alt="Kim Woo-seok">
+            <p>Kim Woo-seok</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="cast-card">
+            <img src="images/woo.jpg" alt="Cha Woo-min">
+            <p>Cha Woo-min</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+  &copy; 2025 Movie | All Rights Reserved
+</footer>
+
+</body>
+</html>
